@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<infocenter_data version="1.0">
+  <iar_name>i2s_internal_loopback</iar_name>                                   <!--App-->
+  <iar_description>
+    This example is a reference application to demonstrate the usage of I2S
+    module APIs
+  </iar_description>                     <!--App short description-->
+  <iar_curdir>$CUR_DIR$</iar_curdir>
+</infocenter_data>

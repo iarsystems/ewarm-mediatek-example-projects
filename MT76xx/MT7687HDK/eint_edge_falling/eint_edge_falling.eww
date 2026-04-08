@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<workspace>
+  <project>
+    <path>$WS_DIR$/eint_edge_falling.ewp</path>
+  </project>
+  <batchBuild>
+    <batchDefinition>
+      <name>Rebuild All Configs</name>
+      <member>
+        <project>eint_edge_falling</project>
+        <configuration>Debug</configuration>
+      </member>
+      <member>
+        <project>eint_edge_falling</project>
+        <configuration>Release</configuration>
+      </member>
+    </batchDefinition>
+  </batchBuild>
+</workspace>

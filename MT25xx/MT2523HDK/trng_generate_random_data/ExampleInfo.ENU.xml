@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<infocenter_data version="1.0">
+  <iar_name>trng_generate_random_data</iar_name>                                   <!--App-->
+  <iar_description>
+  This example is a reference application to demonstrate how to generate
+  a 32-bit true random number
+  </iar_description>                     <!--App short description-->
+  <iar_curdir>$CUR_DIR$</iar_curdir>
+</infocenter_data>

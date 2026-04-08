@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.w3.org/MarkUp/SCHEMA/xhtml11.xsd"
+     xml:lang="en">
+  <head>
+    <title>Information Center for ARM</title>
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+    <link type="text/css" rel="stylesheet" media="all" href="file://$TOOLKIT_DIR$/doc/infocenter/style/ewic.css" />
+  </head>
+  <body>
+  <div id="topbanner"></div>
+  <div id="titlebanner_small">
+    <h2>Information Center for ARM</h2>
+  </div>
+  <div class="breadcrumb"><a href="$TOOLKIT_DIR$/doc/infocenter/index.ENU.html">Information Center for ARM</a> | EXAMPLES</div>
+  <div class="mainblock">
+   <h2>Example description</h2>
+
+   <pre>  <!--Insert readme.txt-->
+    <span style="font-family:monospace">
+Overview
+========
+This example is a reference application to demonstrate how to use the
+SPI API to communicate between SPI Slave and SPI Master devices (slave project)
+
+The example project has two parts: 
+    1. LinkIt 2523 HDK operates as SPI Slave device (spi_slave_from_master)
+    2. LinkIt 2523 HDK operates as SPI Master device (spi_master_to_slave)
+
+-This example does not require FreeRTOS
+
+Hardware requirements
+=====================
+- LinkIt 2523 HDK
+- Personal Computer
+- Type-A to micro-B USB
+
+Board settings
+==============
+- Connect J1007.2 to J1007.3
+- Connect J1009.2 to J1009.3
+- Connect J1010.2 to J1010.3
+- Connect J1011.2 to J1011.3
+- SPI master module pin mapping table is shown below.
+  | SPI Pin | GPIOx     |    PINx          |
+  |-------  |---------  |----------------  |
+  |  CS_N   | GPIO_25   | CON6301 Left.6   |
+  |  SCK    | GPIO_26   | CON6301 Left.7   |
+  |  MOSI   | GPIO_27   | CON6301 Left.8   |
+  |  MISO   | GPIO_28   | CON6301 Left.9   |
+  
+The communication between master and slave devices is shown below:
+       _________________________                       __________________________
+      |           ______________|                     |______________            |
+      |         |SPI Master     |                     |     SPI Slave|           |
+      |         |               |                     |              |           |
+      |         CON6301 Left.6  |_____________________|CON6301 Left.6            |
+      |         |               |                     |              |           |
+      |         CON6301 Left.7  |_____________________|CON6301 Left.7            |
+      |         |               |                     |              |           |
+      |         CON6301 Left.8  |_____________________|CON6301 Left.8            |
+      |         |               |                     |              |           |
+      |         CON6301 Left.9  |_____________________|CON6301 Left.9            |
+      |         |_______________|                     |______________|           |
+      |                         |                     |                          |
+      |                         |                     |                          |
+      |                      GND|_____________________|GND                       |
+      |                         |                     |                          |
+      |_MT2523__________________|                     |_MT2523___________________|
+            
+
+
+Prepare the Demo
+================
+1.  Connect a micro USB cable between the host PC and the MK20 USB port on the target master board (the board for the master example).
+2.  Build this project and Download it to the target master board (the board for the master example).
+3.  Connect a micro USB cable between the host PC and the MK20 USB port on the target slave board (the board for the slave project).
+4.  Build the slave project (spi_slave_to_master) and Download it to the target slave board (the board for the slave example).
+5.  Connect the two boards as shown in "Board settings"
+6.  Open a serial terminal with the following settings for the slave board:
+    - 115200 baud rate
+    - 8 data bits
+    - No parity
+    - One stop bit
+    - No flow control
+
+Running the demo
+================
+1. Either press the reset button on your board or launch the debugger in your IDE to begin running the demo.
+
+The log of "spi_master_send_data_two_boards_example ends" for
+master board and "spi_slave_receive_data_two_boards_example ends" for
+slave board indicates a successful communication
+
+IMPORTANT
+==========
+Please make sure the two LinkIt 2523 HDK boards (Master and Slave) are powered up at the same
+time, no more than 2 seconds apart
+    
+Customization options
+=====================
+</span>
+   </pre>
+
+  </div>
+  </body>
+</html>

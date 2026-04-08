@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exampleInfo>
+  <copyDir>..\..\..\LinkIt SDK 01_17\common</copyDir>
+  <copyDir>..\..\..\LinkIt SDK 01_17\driver</copyDir>
+  <copyDir>..\..\..\LinkIt SDK 01_17\middleware</copyDir>
+  <copyDir>..\..\..\LinkIt SDK 01_17\kernel</copyDir>
+</exampleInfo>
+

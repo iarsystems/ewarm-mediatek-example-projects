@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<infocenter_data version="1.0">
+  <iar_name>spi_slave_from_master</iar_name>                                   <!--App-->
+  <iar_description>
+  This example is a reference application to demonstrate how to use SPI
+  API to communicate with an SPI master (slave project)
+  </iar_description>                     <!--App short description-->
+  <iar_curdir>$CUR_DIR$</iar_curdir>
+</infocenter_data>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<workspace>
+  <project>
+    <path>$WS_DIR$/ept_cfg_pins.ewp</path>
+  </project>
+  <batchBuild>
+    <batchDefinition>
+      <name>Rebuild All Configs</name>
+      <member>
+        <project>ept_cfg_pins</project>
+        <configuration>Debug</configuration>
+      </member>
+      <member>
+        <project>ept_cfg_pins</project>
+        <configuration>Release</configuration>
+      </member>
+    </batchDefinition>
+  </batchBuild>
+</workspace>

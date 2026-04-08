@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspace>
+    <project>
+        <path>$WS_DIR$/ept_configure_pins_by_ept.ewp</path>
+    </project>
+    <batchBuild>
+        <batchDefinition>
+            <name>All</name>
+            <member>
+                <project>ept_configure_pins_by_ept</project>
+                <configuration>Debug</configuration>
+            </member>
+            <member>
+                <project>ept_configure_pins_by_ept</project>
+                <configuration>Release</configuration>
+            </member>
+        </batchDefinition>
+    </batchBuild>
+</workspace>

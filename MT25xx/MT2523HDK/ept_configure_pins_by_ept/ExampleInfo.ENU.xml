@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<infocenter_data version="1.0">
+  <iar_name>ept_configure_pins_by_ept</iar_name>                                   <!--App-->
+  <iar_description>
+  This example shows how to use the EPT (Easy Pinmux Tool) to configure
+  and initialize the I/O pins on the target board
+  </iar_description>                     <!--App short description-->
+  <iar_curdir>$CUR_DIR$</iar_curdir>
+</infocenter_data>

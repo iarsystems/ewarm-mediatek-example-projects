@@ -1,0 +1,50 @@
+Overview
+========
+This example is a reference application to demonstrate how use the SPI
+master APIs to send data with polling mode
+
+-This example does not require FreeRTOS
+
+Hardware requirements
+=====================
+- LinkIt 2523 HDK
+- Personal Computer
+- Type-A to micro-B USB
+
+Board settings
+==============
+- Connect J1007.2 to J1007.3
+- Connect J1009.2 to J1009.3
+- Connect J1010.2 to J1010.3
+- Connect J1011.2 to J1011.3
+
+- SPI master module pins mapping table are shown as below.
+  | SPI Pin | GPIOx     |    PINx          |
+  |-------  |---------  |----------------  |
+  |  CS_N   | GPIO_25   | CON6301 Left.6   |
+  |  SCK    | GPIO_26   | CON6301 Left.7   |
+  |  MOSI   | GPIO_27   | CON6301 Left.8   |
+  |  MISO   | GPIO_28   | CON6301 Left.9   |
+
+
+Prepare the Demo
+================
+1.  Connect a micro USB cable between the host PC and the MK20 USB port on the target board.
+2.  Build the project and Download the program to the target board.
+3.  Open a serial terminal with the following settings:
+    - 115200 baud rate
+    - 8 data bits
+    - No parity
+    - One stop bit
+    - No flow control
+
+Running the demo
+================
+1. Either press the reset button on your board or launch the debugger in your IDE to begin running the demo.
+
+The system will log "---spim_example end---" and the waveform from the
+SPI pins can be observed on an oscilloscope. The waveform corresponding
+to "0x7E, 0x55" will be captured on the oscilloscope.
+    
+Customization options
+=====================

@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.w3.org/MarkUp/SCHEMA/xhtml11.xsd"
+     xml:lang="en">
+  <head>
+    <title>Information Center for ARM</title>
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+    <link type="text/css" rel="stylesheet" media="all" href="file://$TOOLKIT_DIR$/doc/infocenter/style/ewic.css" />
+  </head>
+  <body>
+  <div id="topbanner"></div>
+  <div id="titlebanner_small">
+    <h2>Information Center for ARM</h2>
+  </div>
+  <div class="breadcrumb"><a href="$TOOLKIT_DIR$/doc/infocenter/index.JPN.html">Information Center for ARM</a> | EXAMPLES</div>
+  <div class="mainblock">
+   <h2>Example description</h2>
+
+   <pre>  <!--Insert readme.txt-->
+    <span style="font-family:monospace">
+Overview
+========
+This project is a reference application that demonstrates how to use
+the I2S module APIs to apply an internal loopback. The data sent from
+the I2S TX link is looped back to the I2S RX link
+
+-This example does not require FreeRTOS
+
+Hardware requirements
+=====================
+- LinkIt 2523 HDK
+- Personal Computer
+- Type-A to micro-B USB
+
+Board settings
+==============
+Default board settings
+
+
+Prepare the Demo
+================
+1.  Connect a micro USB cable between the host PC and the MK20 USB port on the target board.
+2.  Build the project and Download the program to the target board.
+3.  Open a serial terminal with the following settings:
+    - 115200 baud rate
+    - 8 data bits
+    - No parity
+    - One stop bit
+    - No flow control
+
+Running the demo
+================
+1. Either press the reset button on your board or launch the debugger in your IDE to begin running the demo.
+
+The transaction result is displayed in the log.
+
+The input and output of transmitted data are described below.
+      - Input to the example.
+        - Data in the i2s_tone2k_32ksr array: 2kHz sine wave audio frequency
+          tone under 32kHz sampling rate. 0xFFF4  0x30F0  0x5A79  0x763C
+          0x7FFF  0x7646  0x5A8B  0x3107 0x000C  0xCF10  0xA587  0x89C4
+          0x8001  0x89BB  0xA576  0xCEF9 0xFFF3  0x30F0  0x5A79  0x763C
+          0x7FFF  0x7645  0x5A8A  0x3106 0x000C  0xCF10  0xA587  0x89C4
+          0x8001  0x89BB  0xA576  0xCEF9
+        - This example project outputs data continuously.
+      - Output from the example.
+        - A transmission delay from the TX to the RX link is unavoidable when
+          the internal loopback mode is set. The first few samples of the RX
+          link are expected to be zero before receiving valid samples.
+          Because of this, the example records samples after several
+          transmissions. Since the recorded data is extracted from a series
+          of transmissions, it would not start from the beginning of
+          i2s_tone2k_32ksr, but follows the pattern below. 0x89bb  0xa576
+          0xcef9  0xfff3  0x30ef  0x5a78  0x763b  0x7ffe 0x7644  0x5a89
+          0x3105  0x000b  0xcf10  0xa587  0x89c4  0x8001 0x89bb  0xa576
+          0xcef9  0xfff4  0x30ef  0x5a78  0x763b  0x7ffe 0x7645  0x5a8a
+          0x3106  0x000b  0xcf10  0xa587  0x89c4  0x8001
+        - The output through I2S interface would not be exactly the same (not
+          bit-true) as the input owing to the slight gain adjustment from the
+          hardware. However, the audio performance would not be affected at
+          all.
+    
+Customization options
+=====================
+
+</span>
+   </pre>
+
+  </div>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<workspace>
+  <project>
+    <path>$WS_DIR$/bootloader.ewp</path>
+  </project>
+  <batchBuild>
+    <batchDefinition>
+      <name>Build All Configs</name>
+      <member>
+        <project>bootloader</project>
+        <configuration>Debug</configuration>
+      </member>
+      <member>
+        <project>bootloader</project>
+        <configuration>Release</configuration>
+      </member>
+    </batchDefinition>
+  </batchBuild>
+</workspace>

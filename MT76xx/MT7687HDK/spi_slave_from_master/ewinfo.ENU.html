@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.w3.org/MarkUp/SCHEMA/xhtml11.xsd"
+     xml:lang="en">
+  <head>
+    <title>Information Center for ARM</title>
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+    <link type="text/css" rel="stylesheet" media="all" href="file://$TOOLKIT_DIR$/doc/infocenter/style/ewic.css" />
+  </head>
+  <body>
+  <div id="topbanner"></div>
+  <div id="titlebanner_small">
+    <h2>Information Center for ARM</h2>
+  </div>
+  <div class="breadcrumb"><a href="$TOOLKIT_DIR$/doc/infocenter/index.ENU.html">Information Center for ARM</a> | EXAMPLES</div>
+  <div class="mainblock">
+   <h2>Example description</h2>
+
+   <pre>  <!--Insert readme.txt-->
+    <span style="font-family: monospace;">
+Overview
+========
+This example is a reference application to use SPI Slave API to
+communicate with SPI Master on the LinkIt 7687 HDK.
+    
+This example project will output logs via HDK USB (CON5) to PC.
+
+Hardware requirements
+=====================
+- Two LinkIt 7687 HDK boards.
+- Personal Computer
+- Type-A to micro-B USB
+
+Board settings
+==============
+Default board settings
+
+And connect the two boards as shown:
+       _________________________                       __________________________
+      |          ______________|                      |______________            |
+      |         |SPI Master    |                      |     SPI Slave|           |
+      |         |              |                      |              |           |
+      |         | J34.8(GPIO32)|______________________|J34.8(GPIO32) |           |
+      |         |              |                      |              |           |
+      |         | J34.7(GPIO29)|______________________|J34.7(GPIO29) |           |
+      |         |              |                      |              |           |
+      |         | J34.6(GPIO30)|______________________|J34.6(GPIO30) |           |
+      |         |              |                      |              |           |
+      |         | J34.5(GPIO31)|______________________|J34.5(GPIO31) |           |
+      |         |______________|                      |______________|           |
+      |                        |                      |                          |
+      |                        |                      |                          |
+      |                     GND|______________________|GND                       |
+      |                        |                      |                          |
+      |_MT7687_________________|                      |_MT7687___________________|
+
+
+Prepare the Demo
+================
+1.  Connect a micro USB cable between the host PC and the MK20 USB port (CON5) on the target board.
+2.  Open a serial terminal on port coresponding to "mbed Serial Port" with the following settings:
+    - 115200 baud rate
+    - 8 data bits
+    - No parity
+    - One stop bit
+    - No flow control
+3.  Download the program to the target board.
+
+Running the demo
+================
+1.  Either press the reset button on your board or launch the debugger in your IDE to begin running the demo.
+
+The log "spi_slave_transfer_data_two_boards_example end"
+indicates a successful communication between SPI Master and Slave.
+    
+Customization options
+=====================
+    <span style="font-family: monospace;">
+   </pre>
+
+  </div>
+  </body>
+</html>
+
+
+
+
+
+

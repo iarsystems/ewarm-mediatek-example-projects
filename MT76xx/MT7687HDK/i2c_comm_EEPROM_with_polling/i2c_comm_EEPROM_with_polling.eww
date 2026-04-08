@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<workspace>
+  <project>
+    <path>$WS_DIR$/i2c_comm_EEPROM_with_polling.ewp</path>
+  </project>
+  <batchBuild>
+    <batchDefinition>
+      <name>All</name>
+      <member>
+        <project>i2c_comm_EEPROM_with_polling</project>
+        <configuration>Debug</configuration>
+      </member>
+      <member>
+        <project>i2c_comm_EEPROM_with_polling</project>
+        <configuration>Release</configuration>
+      </member>
+    </batchDefinition>
+  </batchBuild>
+</workspace>

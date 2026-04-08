@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<infocenter_data version="1.0">
+  <iar_name>i2c_ctrl_EEPROM_with_polling</iar_name>                                   <!--App-->
+  <iar_description>
+    This example is a reference application to use the I2C APIs to
+    communicate with an I2C M24C01 EEPROM device in the I2C polling mode
+  </iar_description>                     <!--App short description-->
+  <iar_curdir>$CUR_DIR$</iar_curdir>
+</infocenter_data>
