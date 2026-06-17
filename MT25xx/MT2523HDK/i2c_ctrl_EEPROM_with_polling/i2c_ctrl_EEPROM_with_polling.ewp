@@ -222,10 +222,10 @@
                     <name>CCPreprocLine</name>
                     <state>0</state>
                 </option>
-        <option>
-          <name>CCListCFile</name>
-          <state>0</state>
-        </option>
+                <option>
+                    <name>CCListCFile</name>
+                    <state>1</state>
+                </option>
                 <option>
                     <name>CCListCMnemonics</name>
                     <state>0</state>
@@ -234,10 +234,10 @@
                     <name>CCListCMessages</name>
                     <state>0</state>
                 </option>
-        <option>
-          <name>CCListAssFile</name>
-          <state>0</state>
-        </option>
+                <option>
+                    <name>CCListAssFile</name>
+                    <state>1</state>
+                </option>
                 <option>
                     <name>CCListAssSource</name>
                     <state>1</state>
@@ -333,6 +333,8 @@
                 </option>
                 <option>
                     <name>CCIncludePath2</name>
+                    <state>$PROJ_DIR$\..\..\..\CMSIS\Core\Include</state>
+
                     <state>$PROJ_DIR$\inc</state>
                     <state>$PROJ_DIR$\..\..\..\LinkIt SDK 01_17\driver\CMSIS\Include</state>
                     <state>$PROJ_DIR$\..\..\..\LinkIt SDK 01_17\driver\CMSIS\Device\MTK\mt2523\Include</state>
@@ -516,10 +518,10 @@
                     <name>ADefines</name>
                     <state/>
                 </option>
-        <option>
-          <name>AList</name>
-          <state>0</state>
-        </option>
+                <option>
+                    <name>AList</name>
+                    <state>1</state>
+                </option>
                 <option>
                     <name>AListHeader</name>
                     <state>1</state>
@@ -1357,6 +1359,8 @@
                 </option>
                 <option>
                     <name>CCIncludePath2</name>
+                    <state>$PROJ_DIR$\..\..\..\CMSIS\Core\Include</state>
+
                     <state>$PROJ_DIR$\inc</state>
                     <state>$PROJ_DIR$\..\..\..\LinkIt SDK 01_17\driver\CMSIS\Include</state>
                     <state>$PROJ_DIR$\..\..\..\LinkIt SDK 01_17\driver\CMSIS\Device\MTK\mt2523\Include</state>

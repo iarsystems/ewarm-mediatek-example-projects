@@ -196,7 +196,7 @@
         </option>
         <option>
           <name>CCListCFile</name>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>CCListCMnemonics</name>
@@ -208,7 +208,7 @@
         </option>
         <option>
           <name>CCListAssFile</name>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>CCListAssSource</name>
@@ -309,6 +309,8 @@
         </option>
         <option>
           <name>CCIncludePath2</name>
+          <state>$PROJ_DIR$\..\..\..\CMSIS\Core\Include</state>
+
           <state>$PROJ_DIR$</state>
           <state>$PROJ_DIR$\..\..\..\LinkIt SDK 01_17\driver\chip\inc</state>
           <state>$PROJ_DIR$\..\..\..\LinkIt SDK 01_17\driver\chip\mt7687\inc</state>
@@ -485,7 +487,7 @@
         </option>
         <option>
           <name>AList</name>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>AListHeader</name>
@@ -1278,6 +1280,8 @@
         </option>
         <option>
           <name>CCIncludePath2</name>
+          <state>$PROJ_DIR$\..\..\..\CMSIS\Core\Include</state>
+
           <state>$PROJ_DIR$</state>
           <state>$PROJ_DIR$\..\..\..\LinkIt SDK 01_17\driver\chip\inc</state>
           <state>$PROJ_DIR$\..\..\..\LinkIt SDK 01_17\driver\chip\mt7687\inc</state>
